@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patricio que pediu</title>
+    <style>
+        #fundo{
+            background-color: rgb(255, 255, 255);
+        }
+        #caixa{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            color:#ffffff;
+            background-color:#000000;
+            text-align: center;
+            font-size: 20pt;
+            transform: translate(423%,190%);
+        }
+    </style>
+</head>
+<body id="fundo">
+    <div id="caixa">
+        Interaja..
+    </div>
+    <script>
+        var b =document.getElementById('fundo')
+        var c = document.getElementById('caixa')
+        c.addEventListener('click',clicou)
+        b.addEventListener('click',clicou)
+        c.addEventListener('mouseenter',entrou)
+        b.addEventListener('mouseenter',entrou)
+        c.addEventListener('mouseout',saiu)
+        b.addEventListener('mouseout',saiu)
+        function clicou(){
+            c.innerText='Clicou!!!'
+            b.style.background='red'
+            c.style.background='red'
+        }
+        function entrou(){
+            c.innerText='Entrou!!!'
+            b.style.background='green'
+            c.style.background='green'
+        }
+        function saiu(){
+            c.innerText='Saiu!!!'
+            b.style.background='black'
+            c.style.background='black'
+
+        }
+    </script>
+</body>
+</html>
