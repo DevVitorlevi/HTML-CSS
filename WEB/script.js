@@ -1,3 +1,4 @@
+
 function somar(){
     var tn1 = document.getElementById('txtn1')
     var tn2 = document.getElementById('txtn2')
