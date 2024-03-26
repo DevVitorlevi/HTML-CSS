@@ -13,10 +13,15 @@
 .section {
     margin: 0 auto;
     border-radius: 1rem;
-    background-color: white;
+    background-image: linear-gradient(-45deg,transparent,rgba(71, 71, 245, 0.514));
     width: 400px;
     height: 280px;
     text-align: center;
+    color: white;
+    box-shadow:10px 10px 15px rgba(0, 0, 0, 0.442);
+    
+    
+
 }
 
 .msg {
