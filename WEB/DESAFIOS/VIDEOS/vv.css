@@ -1,0 +1,17 @@
+body{
+    background-color: rgba(0, 0, 0, 0.89);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color:white;
+}
+.link:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+img{
+    padding: 10px;
+}
