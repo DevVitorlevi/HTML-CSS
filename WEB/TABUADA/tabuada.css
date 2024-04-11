@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(65, 151, 201);
+    font: normal 18pt Arial;
+}
+.titulo{
+    color: white;
+    text-align: center;
+
+}
+.section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(13, 13, 199, 0.541);
+    
+
+}
+footer{
+    color: white;
+    text-align: center;
+
+}
