@@ -13,9 +13,6 @@
             font-family:"Open Sans";
             border: 0;
             box-sizing: border-box;
-
-
-
         }
        button{
             padding: 3px 10px;
@@ -24,6 +21,7 @@
             border-radius: 10px;
             cursor: pointer;
        }
+     
        .container{
             position: absolute;
             top: 50%;
@@ -34,16 +32,50 @@
         .roxo{
             background-color: #3f0263cb;
             transition: all 1s ease-in-out;
-           
         }
         .vermelho{
-            background-color: rgb(165, 7, 7);
+            background-color: rgb(95, 7, 7);
             transition: all 1s ease-in-out;
         }
         .laranja{
-            background-color:#d68e08e7;
+            background-color:#b4770593;
             transition: all 1s ease-in-out;}
-           
+        .roxo:hover{
+            box-shadow: 0px 0px 3px 4px rgba(41, 1, 78, 0.616);
+            transition: all 0.25s ease-in-out;
+        }
+        .vermelho:hover{
+            box-shadow: 0px 0px 3px 4px rgba(78, 1, 1, 0.616);
+            transition: all 0.25s ease-in-out;
+        }
+        .laranja:hover{
+            box-shadow: 0px 0px 3px 4px rgba(128, 98, 1, 0.616);
+            transition: all 0.25s ease-in-out;
+        }
+        .azul{
+            background-color:#0805c293;
+            transition: all 1s ease-in-out;
+        }
+        .azul:hover{
+            box-shadow: 0px 0px 3px 4px rgba(1, 20, 128, 0.616);
+            transition: all 0.25s ease-in-out;
+        }
+        .verde{
+            background-color: #03c269;
+            transition: all 1s ease-in-out;
+        }
+        .verde:hover{
+            box-shadow: 0px 0px 3px 4px #03c2699f;
+            transition: all 0.25s ease-in-out;
+        }
+        .preto{
+            background-color: black;
+            transition: all 1s ease-in-out;
+        }
+        .preto:hover{
+            box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.555);
+            transition: all 0.25s ease-in-out;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +83,9 @@
         <button class="roxo" id="btnr">Roxo</button>
         <button class="vermelho" id="btnv">Vermelho</button>
         <button class="laranja" id="btnl">Laranja</button>
+        <button class="azul" id="btna">Azul</button>
+        <button class="verde" id="btnve">Verde</button>
+        <a href="cordotrabalho.html" target="_blank" rel="external"><button class="preto">Preto</button></a>
     </div>
     <script>
         document.getElementById('btnr').addEventListener('click', function(){
@@ -62,7 +97,14 @@
         document.getElementById('btnl').addEventListener('click', function(){
             document.querySelector('body').setAttribute('class','laranja')
         })
-        
+        document.getElementById('btna').addEventListener('click', function(){
+            document.querySelector('body').setAttribute('class','azul')
+        })
+        document.getElementById('btnve').addEventListener('click', function(){
+            document.querySelector('body').setAttribute('class', 'verde')
+        })
+      
+
     </script>
 </body>
 </html>
