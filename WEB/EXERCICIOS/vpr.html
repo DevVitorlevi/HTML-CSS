@@ -17,13 +17,20 @@
 
 
         }
-        .container{
-            display: flex;
-            flex-direction: row;
-            top: 0%;
+       button{
+            padding: 3px 10px;
+            margin: 0 10px;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+       }
+       .container{
+            position: absolute;
+            top: 50%;
             left: 50%;
-            transform: translate(0%,0%);
-        }
+            transform: translate(-50%,-50%);
+       }
+       
         .roxo{
             background-color: #3f0263cb;
             transition: all 1s ease-in-out;
@@ -41,9 +48,21 @@
 </head>
 <body>
     <div class="container">
-        <button class="roxo">Roxo</button>
-        <button class="vermelho">Vermelho</button>
-        <button class="laranja">Laranja</button>
+        <button class="roxo" id="btnr">Roxo</button>
+        <button class="vermelho" id="btnv">Vermelho</button>
+        <button class="laranja" id="btnl">Laranja</button>
     </div>
+    <script>
+        document.getElementById('btnr').addEventListener('click', function(){
+            document.querySelector('body').setAttribute('class','roxo')
+        })
+        document.getElementById('btnv').addEventListener('click', function(){
+            document.querySelector('body').setAttribute('class','vermelho')
+        })
+        document.getElementById('btnl').addEventListener('click', function(){
+            document.querySelector('body').setAttribute('class','laranja')
+        })
+        
+    </script>
 </body>
 </html>
