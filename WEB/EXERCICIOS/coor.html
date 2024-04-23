@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cor</title>
+    <link rel="stylesheet" href="cor.css">
+</head>
+<body>
+    <input type="text" name="color" id="color" onkeyup="color()">
+    <script>
+        function color (){
+            var Corinput = document.getElementById('color').value
+            document.body.style.background = Corinput
+        }
+    </script>
+</body>
+</html>
