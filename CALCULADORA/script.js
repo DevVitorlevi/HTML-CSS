@@ -19,8 +19,3 @@ function calcular(){
         alert('[ERRO] Preencha o campo')
     }
 }
-function raizq(){
-    var numero = document.getElementById('res').innerHTML
-    document.getElementById('res').innerHTML = Math.sqrt(eval(numero))
-
-}
