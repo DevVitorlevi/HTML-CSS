@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tela{
+    width: 95vw;
+    height: 400px;
+    border: 2px solid rgba(0, 0, 0, 0.281);
+    border-radius: 5px;
+}
+ul>li>a{
+    text-decoration: none;
+    color: rgb(231, 226, 226);
+
+}
+ul>li>a:hover{
+    text-decoration: underline;
+}
+ul>li>#pag1:active{
+    color: #a83737;
+}
+ul>li>#pag3:active{
+    color: #661ba3;
+}
+ul>li>#pag2:active{
+    color: #3d6d79;
+}
