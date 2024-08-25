@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="on">
+        <p><label for="Inome">Nome:</label>
+        <input type="text" name="nome" id="inome" placeholder="Nome:" required maxlength="30" autocomplete="name"autofocus></p>
+            <!--Serve para mostrar nomes salvos anteriormente-->
+        <p><label for="imedia">Média:</label>
+        <input type="number" name="number" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required ></p>
+
+        <p>
+            <label for="imoth">Mês:</label>
+            <input type="month" name="moth" id="imoth" value="2024-08">
+        </p>
+        <p>
+            <label for="idate">Data:</label>
+            <input type="date" name="data" id="idate">
+        </p>
+        <p>
+            <label for="ihora">Hora:</label>
+            <input type="time" name="time" id="Itime">
+        </p>
+
+        <p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
