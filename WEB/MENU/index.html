@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @media screen and (min-width:768px){
+    #burguer{
+        display: none;
+        
+    }
+    #menu{
+        display: block;
+    }
+    ul>a{
+        display: inline-block;
+      
+        
+    }
+    main{
+        width: 768px;
+    }
+}
+    </style>
+</head>
+<body onresize="mudou()">
+    <header>
+        <h1>Inlearn</h1>
+        <span class="material-icons" id="burguer">menu</span>
+        <menu id="menu">
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Sobre Nos</li></a>
+                <a href="#"><li>Contato</li></a>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quas molestias assumenda laudantium accusamus, ea totam temporibus inventore minima provident quo optio? Quos voluptates ipsum accusantium repellat. Minus, sint veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia quae iste omnis, dolore deserunt possimus rerum tempore facilis, nesciunt eos ut? Cum, dolor doloremque possimus enim voluptate eligendi id! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium harum expedita quaerat suscipit error id amet! At, facere neque, quibusdam aspernatur in quia porro ipsam ut quos, non quisquam expedita?</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cupiditate molestiae eos enim cum quasi distinctio, tempora odio et ab consequatur totam laboriosam, quis nemo doloribus natus ut soluta maiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates vitae error incidunt adipisci fuga repellat, quo nemo cum commodi totam? Accusantium, expedita ipsa omnis mollitia dolor earum quaerat impedit soluta!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eum excepturi voluptatibus tempora cumque officiis omnis sunt facilis necessitatibus, odio et, id quasi minima dolor quas iste corrupti deserunt architecto?</p>
+        </article>
+    </main>
+    <script>
+        const menubar =document.getElementById('burguer')
+        const itens = document.getElementById('menu')
+        menubar.addEventListener('click',()=>{
+            if(itens.style.display=='block'){
+                itens.style.display = 'none'
+            
+            }else{
+                itens.style.display = 'block'
+            }
+        })
+        function mudou(){
+            if(window.innerWidth>=768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

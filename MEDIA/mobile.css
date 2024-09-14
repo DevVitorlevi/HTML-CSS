@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(imagens/back-phone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;  
+}
+main{
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.747);
+    width:200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+#phone{
+    display: block;
+}
+#tv{
+    display: none;
+}
+#tablet{
+    display: none;
+}
+#pc{
+    display: none;
+}
+#print{
+    display: none;
+}
