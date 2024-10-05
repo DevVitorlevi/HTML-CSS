@@ -1,6 +1,6 @@
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 const form = document.getElementById('form')
-const inputs = document.querySelectorAll('.required')
+const inputs = document.querySelectorAll('.inputs')
 const spans = document.querySelectorAll('.span-required')
 
 document.addEventListener('keydown',(evt)=>{
