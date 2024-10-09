@@ -87,13 +87,29 @@ button{
 button:hover{
     background-color: var(--color-purple1);
 }
+textarea{
+    resize: none;
+}
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:763px) {
     .select{
         gap: 5px;
         flex-direction: column;
     }
+    .container{
+        width: 350px;
+    }
 
+}
+i{
+    position: absolute;
+    font-size: 25px;
+    cursor: pointer;
+    right: 3%;
+    top: 4px;
+}
+div{
+position: relative;
 }
 
 

@@ -2,6 +2,7 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 const form = document.getElementById('form')
 const inputs = document.querySelectorAll('.inputs')
 const spans = document.querySelectorAll('.span-required')
+const mostrarsenha= document.getElementById('btn-senha')
 
 document.addEventListener('keydown',(evt)=>{
     if(evt.key=='Enter'){
@@ -16,6 +17,7 @@ function impedirEnvio(ev){
     ValidarSenha()
     CompararSenha()
 }
+
 
 function CasoError(indice){
     inputs[indice].style.border= '2px solid #e63636'
@@ -61,6 +63,18 @@ function CompararSenha(){
         CasoError(3)
     }
 }
+
+mostrarsenha.addEventListener('click',()=>{
+    if(inputs[2].type==='password'|| inputs[3].type==='password'){
+        inputs[2].setAttribute('type','text')
+        inputs[3].setAttribute('type','text')
+        mostrarsenha.classList.replace('bi-eye-fill','bi-eye-slash-fill')
+    }else{
+        inputs[2].setAttribute('type','password')
+        inputs[3].setAttribute('type','password')
+        mostrarsenha.classList.replace('bi-eye-slash-fill','bi-eye-fill')
+    }
+})
 
 
 
