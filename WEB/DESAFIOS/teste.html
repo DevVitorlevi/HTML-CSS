@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .input-container {
+      position: relative;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    label {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      background: white;
+      padding: 0 5px;
+      color: #aaa;
+      transition: 0.3s ease;
+      pointer-events: none; /* impede interação com o label */
+    }
+
+    input:focus ~ label,
+    input:valid ~ label {
+      top: -10px;
+      left: 10px;
+      font-size: 12px;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+<div class="input-container">
+  <input type="text" id="nome" placeholder=" " required>
+  <label for="nome">Nome</label>
+</div>
+
+</body>
+</html>
