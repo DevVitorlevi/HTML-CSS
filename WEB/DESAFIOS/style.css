@@ -7,22 +7,84 @@
 }
 :root{
     --bgcolor:white;
+    --border-input:black;
     --text-color:rgb(0, 0, 0);
-}
+    --label-color:white;
+    --icon-color:black;
+    --icon-bg-color:rgb(255, 255, 255);
+    --border-icon:black;
+    --bg-icon:url(moon.svg);
 
+}
+.dark{
+    --bgcolor:black;
+    --border-input:white;
+    --text-color:white;
+    --label-color:black;
+    --icon-color:white;
+    --icon-bg-color:rgb(255, 255, 255);
+    --border-icon:rgba(255, 255, 255);
+    --bg-icon:url(sun.svg);
+}
 body{
-    background-color: var(--bg-color);
+    background-color: var(--bgcolor);
     color: var(--text-color);
 }
-h1{
-    text-align: center;
-}
-i{
-    color:var(--bg-color);
-    font-size: 20px;
-    
-}
-#switch{
+main{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.bi-eye-fill{
+    color:var(--icon-color);
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    right: 3%;
+    top: 8px; 
+    cursor: pointer;
+}
+button{
+    width: 32px;
+    height: 32px;
+    background-image: var(--bg-icon);
+    background-color: var(--icon-bg-color);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid var(--border-icon);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.input-container{
+    position: relative;
+}
+.input-container input{
+    padding:10px;
+    outline: none;
+    border-radius: 10px;
+    width: 200px;
+    border: 0.5px solid var(--border-input);
+    background-color: transparent;
+}
+.input-container label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: var(--text-color);
+    background-color:var(--label-color);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.input-container input:focus ~ label,.input-container input:valid ~ label{
+    top: 0;
 }
