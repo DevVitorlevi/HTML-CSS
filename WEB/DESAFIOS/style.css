@@ -7,13 +7,14 @@
 }
 :root{
     --bgcolor:white;
-    --border-input:black;
+    --border-input:rgb(0, 0, 0);
     --text-color:rgb(0, 0, 0);
     --label-color:white;
     --icon-color:black;
     --icon-bg-color:rgb(255, 255, 255);
-    --border-icon:black;
+    --border-icon:rgb(0, 0, 0);
     --bg-icon:url(moon.svg);
+    
 
 }
 .dark{
@@ -43,7 +44,12 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.bi-eye-fill{
+#Mode{
+    border: 1px solid var(--border-icon);
+    border-radius:50%;
+    padding: 5px;
+}
+.bi-eye-fill,.bi-eye-slash-fill{
     color:var(--icon-color);
     position: absolute;
     font-size: 20px;
@@ -59,7 +65,7 @@ button{
     background-color: var(--icon-bg-color);
     background-position: center center;
     background-repeat: no-repeat;
-    border: 1px solid var(--border-icon);
+    border: 0;
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
@@ -67,14 +73,16 @@ button{
 
 .input-container{
     position: relative;
+    
 }
 .input-container input{
     padding:10px;
     outline: none;
     border-radius: 10px;
-    width: 200px;
+    width: 100%;
     border: 0.5px solid var(--border-input);
     background-color: transparent;
+    color: var(--text-color);
 }
 .input-container label{
     position: absolute;
@@ -87,4 +95,7 @@ button{
 }
 .input-container input:focus ~ label,.input-container input:valid ~ label{
     top: 0;
+}
+span{
+    font-size: 12px;
 }
