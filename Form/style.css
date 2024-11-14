@@ -1,18 +1,20 @@
-:root{
-    --color-white:#fff;
-    --color-red:#e63636;
-    --color-dark1:#181818;
-    --color-dark2:#1e1e1e;
-    --color-purple1:#9333ff;
-    --color-purple2:#4b0082;
+:root {
+    --color-white: #fff;
+    --color-red: #e63636;
+    --color-dark1: #181818;
+    --color-dark2: #1e1e1e;
+    --color-purple1: #9333ff;
+    --color-purple2: #4b0082;
+    --color-input: ;
+    --color-input-hover: ;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: var(--color-dark1);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-white);
@@ -22,57 +24,61 @@ body{
     align-items: center;
 }
 
-.container{
+.container {
     background-color: var(--color-dark2);
     padding: 32px;
     width: 35%;
-    min-width:30%;
-    
+    min-width: 30%;
+
     border-radius: 20px;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.container form{
+.container form {
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
 
-.span-required{
+.span-required {
     display: none;
     font-size: 12px;
-    margin:3px 0 0 1px;
+    margin: 3px 0 0 1px;
     color: var(--color-red);
 }
 
-.inputs{
+.inputs {
     background-color: var(--color-dark1);
     color: var(--color-white);
     border-radius: 5px;
     padding: 8px 5px;
-    outline: none;/*borda do input */
+    outline: none;
+    /*borda do input */
     border: 2px solid var(--color-dark1);
     width: 100%;
     box-sizing: border-box;
     transition: .5s;
 }
 
-.inputs:focus{
-    border:2px solid var(--color-purple1);
+.inputs:focus {
+    border: 2px solid var(--color-purple1);
 
 }
 
-.select{
+.select {
     display: flex;
-    justify-content: space-evenly;/*MESMO ESPAÇO ENTRE OS ELEMENTOS
+    justify-content: space-evenly;
+    /*MESMO ESPAÇO ENTRE OS ELEMENTOS
     */
     font-weight: bold;
     gap: 20px;
 }
-button{
+
+button {
     padding: 20px;
     font-size: 20px;
     outline: none;
@@ -84,32 +90,35 @@ button{
     cursor: pointer;
     transition: .5s;
 }
-button:hover{
+
+button:hover {
     background-color: var(--color-purple1);
 }
-textarea{
+
+textarea {
     resize: none;
 }
 
 @media screen and (max-width:763px) {
-    .select{
+    .select {
         gap: 5px;
         flex-direction: column;
     }
-    .container{
+
+    .container {
         width: 350px;
     }
 
 }
-i{
+
+i {
     position: absolute;
     font-size: 25px;
     cursor: pointer;
     right: 3%;
     top: 4px;
 }
-div{
-position: relative;
+
+div {
+    position: relative;
 }
-
-
