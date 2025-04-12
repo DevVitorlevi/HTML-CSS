@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            grid-template-rows: repeat(3, minmax(200px, auto));
+            color: white;
+        }
+
+        .container>div {
+            background-color: black;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .container>div:nth-child(1) {
+            grid-column: 1 / -1;
+        }
+
+        .container>div:nth-child(2) {
+            grid-column: span 1;
+        }
+
+        .container>div:nth-child(3) {
+            grid-column: 2/5;
+        }
+
+        .container>div:nth-child(4) {
+            grid-column: span 1;
+        }
+
+        .container>div:nth-child(5) {
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>header</div>
+        <div>aux</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, eaque nisi est corrupti reiciendis eos
+            voluptatem sed delectus alias, accusamus cupiditate accusantium ea. Expedita amet delectus atque nisi
+            aperiam necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consectetur! Et,
+            nihil ea! Iure ipsa sint sit quod deserunt, totam magnam, nesciunt molestias, enim laudantium quam saepe?
+            Totam, nihil voluptas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate est ea obcaecati.
+            Minus, harum officia. Id nihil tempore laudantium nostrum laborum, natus, dolorem maxime nisi quo ea
+            accusamus cum ab! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est exercitationem eius
+            voluptatum sed nostrum harum impedit, officia, amet dolor tenetur aut, nemo eum. Officiis debitis vitae
+            animi molestiae deserunt numquam.</div>
+        <div>aux</div>
+        <div>footer</div>
+    </div>
+</body>
+
+</html>
